@@ -3,3 +3,22 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
 }
+
+main {
+  margin: 0 auto;
+  max-width: 70ch;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+#fields .field {
+  display: grid;
+  grid-template-columns: auto max-content;
+}
+
+#fields .field textarea {
+  grid-column: 1 / span 2;
+}
